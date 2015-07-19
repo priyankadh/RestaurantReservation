@@ -1,0 +1,74 @@
+.mainHeader
+{
+    text-align:center;
+display:block;
+    color:cornflowerblue;
+}
+
+.largeButtonDiv{
+   /* margin: 0 auto;
+    width: 10%;*/
+    padding: 2em 0;
+    background: #ffc;
+
+}
+.button-panel
+{
+    display: table;
+    margin: 0 auto;
+    padding: 5%;
+}
+.button1{
+    display: block;
+    background: #27adf1;
+    color: white;
+    border: none;
+    padding: 5px;
+    width: 100%;
+}
+.button2{
+    margin-top: .25em;
+    display: block;
+    border: 1px solid #27adf1;
+    color: #27adf1;
+    background: white;
+    padding: 5px;
+    width: 100%;
+}
+.inputButton{
+    /*padding: 10px 10%;*/
+    border-radius: 3px;
+   /* margin: 0 auto;*/
+    display:block;
+
+    padding: .5em 1em;
+    width: 100%;
+
+}
+
+.formUl {
+   padding: 0;
+    margin: 0;
+    align-items: center;
+
+}
+.formUl li {
+
+    list-style-type: none;
+    margin:5%;
+    margin-bottom: 1%;
+}
+.reg {
+
+    list-style-type: none;
+
+    margin-bottom: 1%;
+}
+
+form{
+    display:inline
+}
+
+.space{
+    margin-bottom: 1%;
+}
