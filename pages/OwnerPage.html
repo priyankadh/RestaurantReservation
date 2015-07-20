@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <title>Restaurant Reservation</title>
+    <h3 class = "mainHeader">Owner Page</h3>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" type="text/css" href="../bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../bootstrap/bootstrap-theme.min.css">
+
+</head>
+<body>
+<div class="container">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#home">Home</a></li>
+        <li><a href="#view" data-toggle="tab">View Reservation</a></li>
+        <li><a href="#seat" data-toggle="tab">View Seating Arrangement</a></li>
+        <li><a href="#edit" data-toggle="tab">Create/Edit Reservation</a></li>
+        <li><a href="#profile" data-toggle="tab">Profile & Setting</a></li>
+        <li><a href="#profile" data-toggle="tab">Contact Us</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane fade in active" id="home">
+            <h6>Home content to add</h6>
+        </div>
+        <div class="tab-pane fade" id="view">
+            <form class="navbar-form navbar-right" role="search">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search in reservations">
+                    <span class="input-group-btn">
+                        <button type="submit" class="btn btn-default">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </span>
+                </div>
+            </form>
+            <div>
+                <table class="table">
+                <thead>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Email</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="success">
+                        <td>fn</td>
+                        <td>ln</td>
+                        <td>id@example.com</td>
+                        <td><button>More detail</button></td>
+                    </tr>
+                    <tr class="danger">
+                        <td>fn</td>
+                        <td>ln</td>
+                        <td>id@example.com</td>
+                        <td><button>More detail</button></td>
+                    </tr>
+                    <tr class="info">
+                        <td>fn</td>
+                        <td>ln</td>
+                        <td>id@example.com</td>
+                        <td><button>More detail</button></td>
+                    </tr>
+                    </tbody>
+                </table>
+
+        </div>
+            </div>
+        <div class="tab-pane fade" id="seat">
+            <h6>seat</h6>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>Confirmation Code</th>
+                        <th>Size</th>
+                        <th>Status</th>
+                        <th>Since</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="success">
+                        <td>#</td>
+                        <td>#</td>
+                        <td>Available</td>
+                        <td>--:--</td>
+                    </tr>
+                    <tr class="danger">
+                        <td>#</td>
+                        <td>#</td>
+                        <td>Available</td>
+                        <td>--:--</td>
+                    </tr>
+                    <tr class="info">
+                        <td>#</td>
+                        <td>#</td>
+                        <td>Available</td>
+                        <td>--:--</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+        </div>
+        <div class="tab-pane fade" id="edit" >
+            <div class="row, space">
+                <div class="col-md-6 col-md-offset-3">
+                    <form method="get" action="http://localhost:63342/RRModule1/pages/ConfirmationNumber.html"> <button>Edit/Cancel Reservation</button></form>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="profile">
+            test
+        </div>
+    </div>
+</div>
+</body>
+</html>
