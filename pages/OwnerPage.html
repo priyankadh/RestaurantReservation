@@ -77,30 +77,62 @@
                 <table class="table">
                     <thead>
                     <tr>
+                        <th>Table Number</th>
                         <th>Confirmation Code</th>
                         <th>Size</th>
                         <th>Status</th>
                         <th>Since</th>
+                        <th>Actions</th>
                     </tr>
                     </thead>
                     <tbody>
                     <tr class="success">
                         <td>#</td>
                         <td>#</td>
+                        <td>#</td>
                         <td>Available</td>
                         <td>--:--</td>
+                         <td>
+                             <div class="btn-group">
+                                <button class="btn dropdown-toggle" data-toggle="dropdown">Change table<span class="caret"></span></button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" id="action-1">Change table</a></li>
+                                    <li><a href="#" id="action-2">Auto assign table</a></li>
+                                </ul>
+                            </div>
+                         </td>
                     </tr>
                     <tr class="danger">
                         <td>#</td>
                         <td>#</td>
+                        <td>#</td>
                         <td>Available</td>
                         <td>--:--</td>
+                        <td>
+                            <div class="btn-group">
+                                <button class="btn dropdown-toggle" data-toggle="dropdown">Change table<span class="caret"></span></button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" id="action-1">Change table</a></li>
+                                    <li><a href="#" id="action-2">Auto assign table</a></li>
+                                </ul>
+                            </div>
+                        </td>
                     </tr>
                     <tr class="info">
                         <td>#</td>
                         <td>#</td>
+                        <td>#</td>
                         <td>Available</td>
                         <td>--:--</td>
+                        <td>
+                            <div class="btn-group">
+                                <button class="btn dropdown-toggle" data-toggle="dropdown">Change table<span class="caret"></span></button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" id="action-1">Change table</a></li>
+                                    <li><a href="#" id="action-2">Auto assign table</a></li>
+                                </ul>
+                            </div>
+                        </td>
                     </tr>
                     </tbody>
                 </table>
@@ -114,9 +146,58 @@
             </div>
         </div>
         <div class="tab-pane fade" id="profile">
-            test
+            <h4>Restaurant profile</h4>
+            <form role="form">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" class="form-control"  placeholder="Restaurant Name">
+                </div>
+
+                <div class="form-group">
+                    <label>Address Line 1</label>
+                    <input type="text" class="form-control"  placeholder="Address line 1">
+                </div>
+
+                <div class="form-group">
+                    <label>Address Line 1</label>
+                    <input type="text" class="form-control"  placeholder="Address line 2">
+                </div>
+
+                <div class="form-group">
+                    <label>City</label>
+                    <input type="text" class="form-control"  placeholder="City name">
+                </div>
+                <div class="form-group">
+                    <label>State</label>
+                    <input type="text" class="form-control"  placeholder="State">
+                </div>
+                <div class="form-group">
+                    <label>Country</label>
+                    <input type="text" class="form-control"  placeholder="Country">
+                </div>
+                <div class="form-group">
+                    <label>Postal code</label>
+                    <input type="number" class="form-control"  placeholder="Zip">
+                </div>
+
+                <div class="form-group">
+                    <label>Phone</label>
+                    <input type="tel" class="form-control" placeholder="Phone number">
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" class="form-control" placeholder="example@domain.com">
+                </div>
+                <div>
+                    <address>
+                        <strong>Twitter, Inc.</strong><br>
+                        795 Folsom Ave, Suite 600<br>
+                        San Francisco, CA 94107<br>
+                        <abbr title="Phone">P:</abbr> (123) 456-7890
+                    </address>
+                </div>
+            </form>
         </div>
     </div>
-</div>
 </body>
 </html>
