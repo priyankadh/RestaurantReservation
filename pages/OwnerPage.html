@@ -7,38 +7,54 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <title>Restaurant Reservation</title>
-    <h3 class = "mainHeader">Owner Page</h3>
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" type="text/css" href="../bootstrap/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../bootstrap/bootstrap-theme.min.css">
 
 </head>
 <body>
+<div class="bodyContent">
+<h3 class = "mainHeader">Owner Page
+	<div class="logout">
+		<a href="home.html">Logout</a>
+	</div>
+</h3>
+    
 <div class="container">
     <ul class="nav nav-tabs">
-        <li class="active"><a href="#home">Home</a></li>
+        <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
         <li><a href="#view" data-toggle="tab">View Reservation</a></li>
         <li><a href="#seat" data-toggle="tab">View Seating Arrangement</a></li>
         <li><a href="#edit" data-toggle="tab">Create/Edit Reservation</a></li>
         <li><a href="#profile" data-toggle="tab">Profile & Setting</a></li>
-        <li><a href="#profile" data-toggle="tab">Contact Us</a></li>
+        <li><a href="#contact" data-toggle="tab">Contact Us</a></li>
     </ul>
 
     <div class="tab-content">
         <div class="tab-pane fade in active" id="home">
-            <h6>Home content to add</h6>
+            <div>Details to be added: Address, hours of operation, etc</div>
+            <div>
+                <address>
+                    <strong>XYZ, Inc.</strong><br>
+                    address line 1, Suite #<br>
+                    City, State - zip<br>
+                    <abbr title="Phone">P:</abbr> (xxx) xxx-xxx
+                </address>
+            </div>
         </div>
         <div class="tab-pane fade" id="view">
-            <form class="navbar-form navbar-right" role="search">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search in reservations">
-                    <span class="input-group-btn">
-                        <button type="submit" class="btn btn-default">
-                            <span class="glyphicon glyphicon-search"></span>
-                        </button>
-                    </span>
-                </div>
-            </form>
+            <div class="row">
+				<form class="navbar-form navbar-right" role="search">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Search in reservations">
+						<span class="input-group-btn">
+							<button type="submit" class="btn btn-default">
+								<span class="glyphicon glyphicon-search"></span>
+							</button>
+						</span>
+					</div>
+				</form>
+			</div>
             <div>
                 <table class="table">
                 <thead>
@@ -53,19 +69,19 @@
                         <td>fn</td>
                         <td>ln</td>
                         <td>id@example.com</td>
-                        <td><button>More detail</button></td>
+                        <td><a href="CustomerRegistration.html">View/Edit</a></td>
                     </tr>
                     <tr class="danger">
                         <td>fn</td>
                         <td>ln</td>
                         <td>id@example.com</td>
-                        <td><button>More detail</button></td>
-                    </tr>
+                        <td><a href="CustomerRegistration.html">View/Edit</a></td>
+					</tr>
                     <tr class="info">
                         <td>fn</td>
                         <td>ln</td>
                         <td>id@example.com</td>
-                        <td><button>More detail</button></td>
+                        <td><a href="CustomerRegistration.html">View/Edit</a></td>
                     </tr>
                     </tbody>
                 </table>
@@ -138,11 +154,17 @@
                 </table>
 
         </div>
-        <div class="tab-pane fade" id="edit" >
+        <div class="tab-pane fade, edit" id="edit" >
             <div class="row, space">
-                <div class="col-md-6 col-md-offset-3">
-                    <form method="get" action="http://localhost:63342/RRModule1/pages/ConfirmationNumber.html"> <button>Edit/Cancel Reservation</button></form>
-                </div>
+                    <div class="formContent">
+						<label>Confirmation Number:<input type = "text" name= "Confirmation Number"></label>
+						
+						<div class="buttonContainer">
+						   <input type = "submit" value="Check Status"> 
+						   <a href="CustomerRegistration.html"><input type = "submit" value="Edit"> </a>
+						   <a href="customerPage.html"> <input type = "submit" value="Cancel" > </a>
+						</div>
+					</div>
             </div>
         </div>
         <div class="tab-pane fade" id="profile">
@@ -179,7 +201,11 @@
                     <label>Postal code</label>
                     <input type="number" class="form-control"  placeholder="Zip">
                 </div>
-
+                <div class="form-group">
+                    <label>Auto assign</label>
+                    <label class="radio-inline"><input type="radio" name="optradio">On</label>
+                    <label class="radio-inline"><input type="radio" name="optradio">Off</label>
+                </div>
                 <div class="form-group">
                     <label>Phone</label>
                     <input type="tel" class="form-control" placeholder="Phone number">
@@ -188,16 +214,64 @@
                     <label>Email</label>
                     <input type="email" class="form-control" placeholder="example@domain.com">
                 </div>
-                <div>
-                    <address>
-                        <strong>Twitter, Inc.</strong><br>
-                        795 Folsom Ave, Suite 600<br>
-                        San Francisco, CA 94107<br>
-                        <abbr title="Phone">P:</abbr> (123) 456-7890
-                    </address>
+                <label>Hours of operation</label>
+                <div class="row">
+                    <div class="col-sm-4">
+                            <div class="btn-group">
+                                <button data-toggle="dropdown" class="btn dropdown-toggle"  data-placeholder="Please select">Select days<span class="caret"></span></button>
+                                <ul class="dropdown-menu">
+                                    <li><input type="checkbox" id="ID"><label for="ID" name="NAME" value="VALUE">Monday</label></li>
+                                    <li><input type="checkbox" id="ID"><label for="ID" name="NAME" value="VALUE">Tuesday</label></li>
+                                    <li><input type="checkbox" id="ID"><label for="ID" name="NAME" value="VALUE">Wednesday</label></li>
+                                    <li><input type="checkbox" id="ID"><label for="ID" name="NAME" value="VALUE">Thursday</label></li>
+                                    <li><input type="checkbox" id="ID"><label for="ID" name="NAME" value="VALUE">Friday</label></li>
+                                    <li><input type="checkbox" id="ID"><label for="ID" name="NAME" value="VALUE">Saturday</label></li>
+                                    <li><input type="checkbox" id="ID"><label for="ID" name="NAME" value="VALUE">Sunday</label></li>
+                                </ul>
+                            </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label class="col-sm-4">From</label>
+                            <input type="time" class="col-sm-6" placeholder="HH:MM">
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label class="col-sm-4">To</label>
+                            <input type="time" class="col-sm-6" placeholder="HH:MM">
+                        </div>
+                    </div>
                 </div>
+               <div class="space">
+                <button type="submit" value="Save" class="btn-primary formButton">Save</button>
+                <button type="reset" class="formButton" value="Reset">Reset</button>
+               </div>
             </form>
         </div>
+        <div class="tab-pane fade" id="contact">
+            <div>
+                <address>
+                    <strong>XYZ, Inc.</strong><br>
+                    address line 1, Suite #<br>
+                    City, State - zip<br>
+                    <abbr title="Phone">P:</abbr> (xxx) xxx-xxx
+                </address>
+            </div>
+            <div class="form-group">
+                <label>Email From:</label>
+                <input type="email" class="form-control" placeholder="example@domain.com">
+            </div>
+            <div class="form-group">
+                <label>Comments</label>
+               <textarea class="form-control custom-control" rows="3" cols="10"></textarea>
+            </div>
+            <button type="submit" value="Send" class="btn btn-xs btn-primary">Send</button>
+            <button type="reset" value="Reset" class="btn-xs">Clear</button>
+
+        </div>
     </div>
+</div>
+</div>
 </body>
 </html>

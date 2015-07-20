@@ -1,15 +1,48 @@
 .mainHeader
 {
     text-align:center;
-display:block;
+    display:block;
     color:cornflowerblue;
+    font-size: 1.5em;
+	font-weight: bold;
 }
-
+.logout{
+	float: right;
+    font-size: 0.8em;
+    margin-right: 15%;
+}
+.secondHeader
+{
+    margin-left: 2.6%;
+    font-size: 1.2em;
+	color: cornflowerblue;
+}
+.formContent{
+	margin-left: 2.8%;
+}
+.buttonContainer{
+	margin: 15px 0;
+}
+a{
+text-decoration: none;
+}
+.tab-content .formContent {
+	margin-left: 0;
+    margin-top: 15px;
+}
+.centerHeader{
+	text-align: center;
+}
+body{
+    font-family: monospace;
+	background-color: #f7fffd  !important;
+}
 .largeButtonDiv{
    /* margin: 0 auto;
-    width: 10%;*/
+    width: 10%;
+	background: #ffc;*/
     padding: 2em 0;
-    background: #ffc;
+    
 
 }
 .button-panel
@@ -46,6 +79,10 @@ display:block;
 
 }
 
+.formButton{
+    margin-top: 2%;
+}
+
 .formUl {
    padding: 0;
     margin: 0;
@@ -72,3 +109,10 @@ form{
 .space{
     margin-bottom: 1%;
 }
+.edit{
+    margin-bottom: 10%;
+}
+.bodyContent{
+   margin:10px 10px;
+}
+

@@ -2,24 +2,30 @@
 <head>
     <meta charset="UTF-8">
     <title>owner login page</title>
-    <h1 class="mainHeader">Restaurant Registration</h1>
-    <h2 class = "mainHeader">Owner Login</h2>
+    
     <link rel="stylesheet" href="../styles/main.css">
 </head>
 <body>
+<div class="bodyContent">
+<h1 class="mainHeader">Restaurant Registration</h1>
+<h2 class = "secondHeader centerHeader">Owner Login </h2>
 <section class="loginform cf">
-    <form name="login" action="index_submit" method="get" accept-charset="utf-8">
+    <form name="login" action="OwnerPage.html" method="post" accept-charset="utf-8">
         <div class="button-panel">
             <ul class="formUl">
                 <li><label for="usermail">Email</label>
-                    <input type="email" name="usermail" placeholder="yourname@email.com" required></li>
+                    <input type="email" name="usermail" placeholder="yourname@email.com" required>
+                </li>
                 <li><label for="password">Password</label>
-                    <input type="password" name="password" placeholder="password" required></li>
+                    <input type="password" name="password" placeholder="password" required>
+                </li>
                 <li>
-                    <input type="submit" value="Login"></li>
+                    <button>Login</button>
+                </li>
             </ul>
         </div>
     </form>
 </section>
+</div>
 </body>
 </html>
